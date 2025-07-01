@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OTP Auth Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h2>Signup</h2>
+    <div id="signup-form">
+      <input type="text" id="name" placeholder="Full Name" />
+      <input type="email" id="email" placeholder="Email" />
+      <input type="text" id="phone" placeholder="Phone Number" />
+      <input type="password" id="password" placeholder="Password" />
+      <button onclick="sendOTP('signup')">Send OTP</button>
+    </div>
+
+    <div id="otp-section" style="display: none;">
+      <p>Enter OTP sent to your phone:</p>
+      <input type="text" id="otp-input" placeholder="Enter OTP" />
+      <button onclick="verifyOTP()">Verify OTP</button>
+    </div>
+
+    <hr />
+
+    <h2>Login</h2>
+    <div id="login-form">
+      <input type="text" id="login-phone" placeholder="Phone Number" />
+      <button onclick="sendOTP('login')">Send OTP</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
