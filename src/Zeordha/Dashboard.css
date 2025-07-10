@@ -1,0 +1,270 @@
+.dashboard-root {
+  background: #18191a;
+  color: #fff;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.dashboard-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #232526;
+  padding: 0 32px;
+  height: 60px;
+  border-bottom: 2px solid #222;
+}
+
+.dashboard-indices {
+  display: flex;
+  gap: 32px;
+  font-size: 16px;
+}
+
+.dashboard-nifty,
+.dashboard-sensex {
+  color: #bdbdbd;
+}
+
+.dashboard-nifty .green
+{
+color: green;
+font-weight: bold;
+}
+
+.dashboard-sensex .green {
+  color: red;
+  font-weight: bold;
+}
+
+.dashboard-logo {
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+}
+
+.dashboard-logo img {
+  width: 40px;
+  height: auto;
+}
+
+
+
+.dashboard-menu {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  font-size: 16px;
+}
+
+.dashboard-menu .active {
+  color: #ff5722;
+  font-weight: bold;
+}
+
+.dashboard-cart {
+  font-size: 22px;
+}
+
+.dashboard-login {
+  background: #ff5722;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 18px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 12px;
+}
+
+.dashboard-content {
+  display: flex;
+  height: calc(100vh - 60px);
+}
+
+.dashboard-sidebar {
+  width: 340px;
+  background: #232526;
+  padding: 32px 16px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.dashboard-searchbar {
+  display: flex;
+  align-items: center;
+  background: #18191a;
+  border-radius: 6px;
+  padding: 6px 12px;
+  margin-bottom: 12px;
+}
+
+.dashboard-searchbar input {
+  background: transparent;
+  border: none;
+  color: #fff;
+  flex: 1;
+  font-size: 15px;
+  outline: none;
+}
+
+.dashboard-search-icon {
+  color: #bdbdbd;
+  font-size: 18px;
+  margin-left: 8px;
+}
+
+.dashboard-watchlist-header {
+  display: flex;
+  justify-content: space-between;
+  color: #bdbdbd;
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.dashboard-new-group {
+  color: #4a90e2;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.dashboard-watchlist-table {
+  background: #18191a;
+  border-radius: 6px;
+  padding: 10px 0;
+}
+
+.dashboard-watchlist-default {
+  color: #bdbdbd;
+  font-size: 14px;
+  margin-bottom: 6px;
+  padding-left: 12px;
+}
+
+.dashboard-watchlist-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 12px;
+  font-size: 15px;
+  border-bottom: 1px solid #232526;
+}
+
+.dashboard-watchlist-row:last-child {
+  border-bottom: none;
+}
+
+.dashboard-watchlist-row.red span {
+  color: #ff5252;
+}
+
+.dashboard-watchlist-row.green span {
+  color: #4caf50;
+}
+
+.dashboard-watchlist-row span {
+  min-width: 60px;
+  text-align: right;
+}
+
+.dashboard-watchlist-row span:first-child {
+  text-align: left;
+  min-width: 100px;
+}
+
+.dashboard-main {
+  flex: 1;
+  padding: 32px 32px 16px 32px;
+  overflow-y: auto;
+}
+
+.dashboard-main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+
+.dashboard-main-search input {
+  background: #232526;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  padding: 6px 14px;
+  font-size: 15px;
+  outline: none;
+}
+
+.dashboard-orders-table {
+  background: #232526;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.dashboard-orders-header,
+.dashboard-orders-row {
+  display: grid;
+  grid-template-columns: 2.5fr 1.2fr 1fr 1.3fr 0.7fr;
+  align-items: center;
+  padding: 14px 18px;
+  font-size: 16px;
+}
+
+.dashboard-orders-header {
+  background: #18191a;
+  color: #bdbdbd;
+  font-weight: 500;
+}
+
+.dashboard-orders-row {
+  border-top: 1px solid #18191a;
+  background: #232526;
+}
+
+.dashboard-orders-row:hover {
+  background: #282a2d;
+}
+
+.dashboard-orders-instrument {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.dashboard-orders-name {
+  color: #bdbdbd;
+  font-size: 14px;
+}
+
+.dashboard-apply-btn {
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 7px 18px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.dashboard-apply-btn:hover {
+  background: #1565c0;
+}
+
+@media (max-width: 900px) {
+  .dashboard-content {
+    flex-direction: column;
+  }
+
+  .dashboard-sidebar {
+    width: 100%;
+    flex-direction: row;
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .dashboard-main {
+    padding: 16px;
+  }
+}

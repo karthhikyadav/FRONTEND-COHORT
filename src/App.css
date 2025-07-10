@@ -1,0 +1,11 @@
+.app-container {
+    background: #222;
+    min-height: 100vh;
+    color: #fff;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.main-layout {
+    display: flex;
+    height: calc(100vh - 60px);
+}
